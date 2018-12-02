@@ -6,7 +6,7 @@ const client = new Discord.Client();
 
 client.login('NTE4ODQ5MjM0ODYzMTI4NTkz.DuWvmw.-yRjsX5KgTLgRBenvWLjPj6K7iU');
 
-var prefix = 'y!'
+var prefix = '!!'
 client.on('ready',  () => {
   console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'); 
   console.log('by Ahmed');
@@ -58,7 +58,7 @@ reaction2.on("collect", r => {
 
 client.on('message', message => {
               if(!message.channel.guild) return;
-    if(message.content.startsWith('y!bc')) {
+    if(message.content.startsWith('!!bc')) {
     if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
   if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية** `ADMINISTRATOR`' );  
     let args = message.content.split(" ").join(" ").slice(2 + prefix.length);
@@ -99,7 +99,7 @@ client.on('message', message => {
 client.on('message', message => {
     var args = message.content.toLowerCase().split(' ');
     var command = args[0];
-    var prefix = 'y!';
+    var prefix = '!!';
     var wordsSay = message.content.split(' ').slice(1).join(' ');
    
     if(command == prefix + 'say') {
@@ -119,7 +119,7 @@ client.on('message', message => {
 client.on('message',async message => {
     const moment = require('moment');
 const ms = require('ms')
-    var prefix = 'y!' //بريفكس البوت
+    var prefix = '!!' //بريفكس البوت
   var time = moment().format('Do MMMM YYYY , hh:mm');
   var room;
   var title;
@@ -215,12 +215,12 @@ client.on("ready", () => {
 });
 
 client.on('message', message => {
-            if (message.content.startsWith("y!help")) {
+            if (message.content.startsWith("!!help")) {
      let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)
-.addField('y!report | للتبليغ عن شخص مأ للاونر')
-.addField('y!say | تخلي البوت يقول كلام معين انت تكتبه')
-.addField('y!bc | لعمل برودكاست لجميع الاعضاء في السيرفر')
+.addField('!!report | للتبليغ عن شخص مأ للاونر')
+.addField('!!say | تخلي البوت يقول كلام معين انت تكتبه')
+.addField('!!bc | لعمل برودكاست لجميع الاعضاء في السيرفر')
 .setColor("RANDOM")
   message.channel.sendEmbed(embed);
     }
