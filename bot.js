@@ -17,9 +17,6 @@ client.on('ready',  () => {
 client.user.setStatus("dnd");
 });
 
-// playing
-client.on('ready', () => {                                                                                                                                                                                                                                                                                                                                                                                                                                                  client.user.setGame(`-help | On 20 Servers`,'https://www.twitch.tv/v5bz');
-});          
 
 client.on('message', function(message) {
     if(message.content.startsWith(prefix + "report")) {
