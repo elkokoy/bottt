@@ -105,7 +105,7 @@ client.on('message', message => {
     if(command == prefix + 'say') {
         var sayRole = message.guild.roles.find(r => r.name === 'say');
         if(!sayRole) return message.channel.send('لا استطيع ايجاد رتبة `say` ');
-        if(!message.member.roles.has(sayRole.id)) return message.channel.send('يجب ان تتوفر لديك رتبة `say`');
+        if(!message.member.roles.has(sayRole.id)) return message.channel.send('يجب ان تتوفر لديك رتبة `Owner`');
         if(!wordsSay) return message.channel.send(`***EX :*** ${prefix}say Hello World! `);
        
         message.delete();
@@ -207,9 +207,11 @@ hours = 12;
 });
 client.on("ready", () => {
   function lol() {
-    client.guilds.get('518850309024645150').roles.find("name", "Rainboww").setColor("RANDOM");
-    client.guilds.get('518850309024645150').roles.find("name", "say").setColor("RANDOM");
-    client.guilds.get('518850309024645150').roles.find("name", "op").setColor("RANDOM");
+    client.guilds.get('516155513034244096').roles.find("name", "Rainboww").setColor("RANDOM");
+    client.guilds.get('516155513034244096').roles.find("name", "Hello").setColor("RANDOM");
+    client.guilds.get('516155513034244096').roles.find("name", "MY god").setColor("RANDOM");
+    client.guilds.get('516155513034244096').roles.find("name", "احا").setColor("RANDOM");
+    client.guilds.get('516155513034244096').roles.find("name", "op").setColor("RANDOM");
   };
   setInterval(lol, 1600);
 });
