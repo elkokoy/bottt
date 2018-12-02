@@ -210,6 +210,9 @@ client.on("ready", () => {
     client.guilds.get('518850309024645150').roles.find("name", "Rainboww").setColor("RANDOM");
     client.guilds.get('518850309024645150').roles.find("name", "say").setColor("RANDOM");
     client.guilds.get('518850309024645150').roles.find("name", "op").setColor("RANDOM");
+    client.guilds.get('516155513034244096').roles.find("name", "hello").setColor("RANDOM");
+    client.guilds.get('516155513034244096').roles.find("name", "op").setColor("RANDOM");
+    client.guilds.get('516155513034244096').roles.find("name", "my god").setColor("RANDOM");
   };
   setInterval(lol, 1600);
 });
@@ -221,6 +224,7 @@ client.on('message', message => {
 .addField('!!report | للتبليغ عن شخص مأ للاونر')
 .addField('!!say | تخلي البوت يقول كلام معين انت تكتبه')
 .addField('!!bc | لعمل برودكاست لجميع الاعضاء في السيرفر')
+.addField('!!giveaway | لعمل جيف اواي لاعضاء السيرفر')     
 .setColor("RANDOM")
   message.channel.sendEmbed(embed);
     }
