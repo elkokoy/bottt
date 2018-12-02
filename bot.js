@@ -213,4 +213,14 @@ client.on("ready", () => {
   };
   setInterval(lol, 1600);
 });
-
+client.on('message', message => {
+            if (message.content.startsWith("y!help")) {
+     let embed = new Discord.RichEmbed()
+.setThumbnail(message.author.avatarURL)
+.addField('y!report | للتبليغ عن شخص مأ للاونر')
+.addField('y!say | تخلي البوت يقول كلام معين انت تكتبه')
+.addField('y!bc | لعمل برودكاست لجميع الاعضاء في السيرفر')
+.setColor("RANDOM")
+  message.channel.sendEmbed(embed);
+    }
+});
