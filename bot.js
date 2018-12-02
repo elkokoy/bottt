@@ -4,7 +4,7 @@ const client = new Discord.Client();
 
 
 
-client.login('NTE4ODQ5MjM0ODYzMTI4NTkz.DuWvmw.-yRjsX5KgTLgRBenvWLjPj6K7iU');
+client.login('NTE4NTQyMjg4MjgxMDEwMjA3.DuXRzQ.xqUWXTzQ3u-jknTTduyaHobWMQ0');
 
 var prefix = '!!'
 client.on('ready',  () => {
@@ -22,7 +22,7 @@ client.on('message', function(message) {
     if(message.content.startsWith(prefix + "report")) {
         let messageArgs = message.content.split(" ").slice(1).join(" ");
         let messageReason = message.content.split(" ").slice(2).join(" ");
-        if(!messageReason) return message.reply("**# حدد الشخص الذي تريد البلاغ عنه و بعدها قم بكتابه السبب**");
+        if(!messageReason) return message.reply("**@ حدد الشخص الذي تريد البلاغ عنه و بعدها قم بكتابه السبب**");
     let mUser = message.mentions.users.first();
     if(!mUser) return message.channel.send("لا يمكنني وجود الشخص المراد البلاغ عنه.");
     let Rembed = new Discord.RichEmbed()
@@ -33,7 +33,7 @@ client.on('message', function(message) {
     .addField("**# - Reason:**",messageReason,true)
     .addField("**# - Channel:**",message.channel,true)
     .addField("**# - Time:**",message.createdAt,true)
-    .setFooter("لو ان الابلاغ فيه مزح راح يتعرض صاحب الابلاغ لقوبات")
+    .setFooter("لو ان الابلاغ غلط انت اللي هتاخد انذار")
 message.channel.send(Rembed)
 message.channel.send("__Are you sure you want to send this to the Server owner??__").then(msg => {
     msg.react("✅")
@@ -60,9 +60,9 @@ client.on('message', message => {
               if(!message.channel.guild) return;
     if(message.content.startsWith('!!bc')) {
     if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
-  if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية** `ADMINISTRATOR`' );  
+  if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية** `Owner`' );  
     let args = message.content.split(" ").join(" ").slice(2 + prefix.length);
-    let copy = "Yuri Bot";
+    let copy = "𝔾𝔼𝕂𝕐 𝟞𝟞𝟞";
     let request = `Requested By ${message.author.username}`;  
     if (!args) return message.reply('**يجب عليك كتابة كلمة او جملة لإرسال البرودكاست**');message.channel.send(`**هل أنت متأكد من إرسالك البرودكاست؟ \nمحتوى البرودكاست:** \` ${args}\``).then(msg => {
     msg.react('✅')
@@ -178,7 +178,7 @@ hours = 12;
                   let giveEmbed = new Discord.RichEmbed()
                   .setDescription(`**${title}** \nReact With 🎉 To Enter! \nTime remaining : ${duration} \n **Created at :** ${hours}:${minutes}:${seconds} ${suffix}`)
                   .setFooter(message.author.username, message.author.avatarURL);
-                  message.guild.channels.find("name" , room).send(' :heavy_check_mark: **Yuri Bot** :heavy_check_mark:' , {embed: giveEmbed}).then(m => {
+                  message.guild.channels.find("name" , room).send(' :heavy_check_mark: **𝔾𝔼𝕂𝕐 𝟞𝟞𝟞** :heavy_check_mark:' , {embed: giveEmbed}).then(m => {
                      let re = m.react('🎉');
                      setTimeout(() => {
                        let users = m.reactions.get("🎉").users
