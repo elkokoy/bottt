@@ -213,6 +213,7 @@ client.on("ready", () => {
   };
   setInterval(lol, 1600);
 });
+
 client.on('message', message => {
             if (message.content.startsWith("y!help")) {
      let embed = new Discord.RichEmbed()
