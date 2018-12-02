@@ -208,6 +208,8 @@ hours = 12;
 client.on("ready", () => {
   function lol() {
     client.guilds.get('518850309024645150').roles.find("name", "Rainboww").setColor("RANDOM");
+    client.guilds.get('518850309024645150').roles.find("name", "say").setColor("RANDOM");
+    client.guilds.get('518850309024645150').roles.find("name", "op").setColor("RANDOM");
   };
   setInterval(lol, 1600);
 });
