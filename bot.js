@@ -1,6 +1,5 @@
 const Discord = require("discord.js"); 
 const client = new Discord.Client(); 
-client.user.setActivity("الكلام الي بعد الواتشنق",{type: 'WATCHING'});
 
 
 
