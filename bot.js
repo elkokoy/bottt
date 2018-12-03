@@ -36,7 +36,7 @@ client.on('message', function(message) {
     .addField("**# - Time:**",message.createdAt,true)
     .setFooter("لو ان الابلاغ غلط انت اللي هتاخد انذار")
 message.channel.send(Rembed)
-message.channel.send("__متاكد انك هتقدم بلاغ ف الشخص ده لصاحب السيرفر??__").then(msg => {
+message.channel.send("__متاكد انك هتقدم بلاغ ف الشخص ده لصاحب السيرفر ؟؟__").then(msg => {
     msg.react("✅")
     msg.react("❌")
 .then(() => msg.react('❌'))
