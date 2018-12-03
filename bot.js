@@ -18,7 +18,7 @@ client.on('ready',  () => {
 client.user.setStatus("dnd");
 });
 client.user.setActivity("ℊℯℯ𝖪𝒴 server!!help",{type: 'WATCHING'});
-
+});
 
 client.on('message', function(message) {
     if(message.content.startsWith(prefix + "report")) {
