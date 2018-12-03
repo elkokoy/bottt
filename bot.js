@@ -227,3 +227,5 @@ client.on('message', message => {
   message.channel.sendEmbed(embed);
     }
 });
+const Discord = require("discord.js"); const client = new Discord.Client(); client.on('ready', () => { console.log(`Logged in as ${client.user.tag} !`); client.user.setActivity("ℊℯℯ𝖪𝒴 server!!help",{type: 'WATCHING'}); }); client.login("NTE4NTQyMjg4MjgxMDEwMjA3.DuXRzQ.xqUWXTzQ3u-jknTTduyaHobWMQ0") \\\توكن حسابك
+
