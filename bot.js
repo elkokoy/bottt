@@ -208,11 +208,8 @@ hours = 12;
 });
 client.on("ready", () => {
   function lol() {
-    client.guilds.get('516155513034244096').roles.find("name", "Rainboww").setColor("RANDOM");
-    client.guilds.get('516155513034244096').roles.find("name", "Hello").setColor("RANDOM");
-    client.guilds.get('516155513034244096').roles.find("name", "MY god").setColor("RANDOM");
-    client.guilds.get('516155513034244096').roles.find("name", "احا").setColor("RANDOM");
-    client.guilds.get('516155513034244096').roles.find("name", "op").setColor("RANDOM");
+    client.guilds.get('518933084792684544').roles.find("name", "ℊℯℯ𝖪").setColor("RANDOM");
+
   };
   setInterval(lol, 1600);
 });
@@ -222,9 +219,10 @@ client.on('message', message => {
      let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)
 .addField('!!report | للتبليغ عن شخص مأ للاونر')
-.addField('!!say | تخلي البوت يقول كلام معين انت تكتبه')
-.addField('!!bc | لعمل برودكاست لجميع الاعضاء في السيرفر')
-.addField('!!giveaway | لعمل جيف اواي لاعضاء السيرفر')     
+.addField('!!say | تخلي البوت يقول كلام معين انت تكتبه للادمن بس')
+.addField('!!bc | لعمل برودكاست لجميع الاعضاء في السيرفر للادمن بس')
+.addField('!!giveaway | لعمل جيف اواي لاعضاء السيرفر')
+.addField('اي شي جديد هيضاف هنا وفي نيوز:heart: ')
 .setColor("RANDOM")
   message.channel.sendEmbed(embed);
     }
