@@ -106,7 +106,7 @@ client.on('message', message => {
     if(command == prefix + 'say') {
         var sayRole = message.guild.roles.find(r => r.name === 'ℊℯℯ𝖪');
         if(!sayRole) return message.channel.send('لا استطيع ايجاد رتبة `ℊℯℯ𝖪` ');
-        if(!message.member.roles.has(sayRole.id)) return message.channel.send('يجب ان تتوفر لديك رتبة `Owner`');
+        if(!message.member.roles.has(sayRole.id)) return message.channel.send('يجب ان تتوفر لديك رتبة `ℊℯℯ𝖪`');
         if(!wordsSay) return message.channel.send(`***EX :*** ${prefix}say Hello World! `);
        
         message.delete();
