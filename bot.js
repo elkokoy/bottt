@@ -63,7 +63,7 @@ client.on('message', message => {
     if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
   if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية** `Owner`' );  
     let args = message.content.split(" ").join(" ").slice(2 + prefix.length);
-    let copy = "𝔾𝔼𝕂𝕐 𝟞𝟞𝟞";
+    let copy = "ℊℯℯ𝖪𝒴 𝓞𝓟";
     let request = `Requested By ${message.author.username}`;  
     if (!args) return message.reply('**يجب عليك كتابة كلمة او جملة لإرسال البرودكاست**');message.channel.send(`**هل أنت متأكد من إرسالك البرودكاست؟ \nمحتوى البرودكاست:** \` ${args}\``).then(msg => {
     msg.react('✅')
@@ -103,9 +103,9 @@ client.on('message', message => {
     var prefix = '!!';
     var wordsSay = message.content.split(' ').slice(1).join(' ');
    
-    if(command == prefix + 'say') {
-        var sayRole = message.guild.roles.find(r => r.name === 'say');
-        if(!sayRole) return message.channel.send('لا استطيع ايجاد رتبة `say` ');
+    if(command == prefix + 'ℊℯℯ𝖪') {
+        var sayRole = message.guild.roles.find(r => r.name === 'ℊℯℯ𝖪');
+        if(!sayRole) return message.channel.send('لا استطيع ايجاد رتبة `ℊℯℯ𝖪` ');
         if(!message.member.roles.has(sayRole.id)) return message.channel.send('يجب ان تتوفر لديك رتبة `Owner`');
         if(!wordsSay) return message.channel.send(`***EX :*** ${prefix}say Hello World! `);
        
@@ -179,7 +179,7 @@ hours = 12;
                   let giveEmbed = new Discord.RichEmbed()
                   .setDescription(`**${title}** \nReact With 🎉 To Enter! \nTime remaining : ${duration} \n **Created at :** ${hours}:${minutes}:${seconds} ${suffix}`)
                   .setFooter(message.author.username, message.author.avatarURL);
-                  message.guild.channels.find("name" , room).send(' :heavy_check_mark: **𝔾𝔼𝕂𝕐 𝟞𝟞𝟞** :heavy_check_mark:' , {embed: giveEmbed}).then(m => {
+                  message.guild.channels.find("name" , room).send(' :heavy_check_mark: **ℊℯℯ𝖪𝒴 𝓞𝓟** :heavy_check_mark:' , {embed: giveEmbed}).then(m => {
                      let re = m.react('🎉');
                      setTimeout(() => {
                        let users = m.reactions.get("🎉").users
