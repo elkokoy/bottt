@@ -205,13 +205,7 @@ hours = 12;
     });
   }
 });
-client.on("ready", () => {
-  function lol() {
-    client.guilds.get('518933084792684544').roles.find("name", "ℊℯℯ𝖪").setColor("RANDOM");
 
-  };
-  setInterval(lol, 1600);
-});
 
 client.on('message', message => {
             if (message.content.startsWith("!!help")) {
@@ -225,4 +219,10 @@ client.on('message', message => {
 .setColor("RANDOM")
   message.channel.sendEmbed(embed);
     }
+});
+client.on("ready", () => { // كود رينبو
+  function lol() {
+    client.guilds.get('518933084792684544').roles.find("name", "ℊℯℯ𝖪").setColor("RANDOM");
+  };
+  setInterval(lol, 1000);
 });
