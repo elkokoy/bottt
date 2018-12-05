@@ -5,7 +5,6 @@ const client = new Discord.Client();
 
 
 
-client.login('NTE4NTQyMjg4MjgxMDEwMjA3.DuhwBQ.44DDi5CG9rS7n_dqqz5wc4EujGk');
 
 var prefix = '!!'
 client.on('ready',  () => {
@@ -226,3 +225,4 @@ client.on("ready", () => { // كود رينبو
   };
   setInterval(lol, 1000);
 });
+client.login(process.env.BOT_TOKEN);
