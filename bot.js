@@ -17,7 +17,7 @@ client.on('ready',  () => {
 client.user.setStatus("dnd");
 });
 client.on('ready', () => {
-     client.user.setActivity("ℊℯℯ𝖪𝒴 server",{type: 'WATCHING'})
+     client.user.setActivity("!!help | للاستعمال",{type: 'WATCHING'})
 
 });
 client.on('message', function(message) {
