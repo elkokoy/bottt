@@ -355,12 +355,19 @@ Dat = currentTime.getDate()
   }
 
 });
-client.on('message', message => { 
-if (message.content === '!clear') {then(msg => msg.delete(10000));  if(!message.guild.member(message.author).hasPermission('Administartor')) return message.channel.send(':heavy_multiplication_x:| **You dont have Perms..**');
-  message.channel.send("**Cleared...**").
-    }
-});
-
+client.on('message', message => {      
+if (message.content.startsWith('!!clear')) { //xRGRx .. By FIVE STARS
+    if(!message.channel.guild) return message.reply('⛔ | This Command For Servers Only!');
+        if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.channel.send('⛔ | You dont have **MANAGE_MESSAGES** Permission!');
+        if(!message.guild.member(client.user).hasPermission('MANAGE_MESSAGES')) return message.channel.send('⛔ | I dont have **MANAGE_MESSAGES** Permission!');
+ let args = message.content.split(" ").slice(1)
+    let messagecount = parseInt(args);
+    if (args > 1000) return message.reply("**🛑 || يجب ان يكون عدد المسح أقل من 1000 .**").then(messages => messages.delete(5000))
+    if(!messagecount) args = '1000';
+    message.channel.fetchMessages({limit: messagecount + 1}).then(messages => message.channel.bulkDelete(messages));
+    message.channel.send(`\`${args}\` : __عدد الرسائل التي تم مسحها __ `).then(messages => messages.delete(5000));
+  }
+  });
 client.on('message', msg => {
  if (msg.content.startsWith('!!send')) {
       let args = msg.content.split(' ').slice(1)
