@@ -218,7 +218,7 @@ client.on('message', message => {
 .addField('!!say | تخلي البوت يقول كلام معين انت تكتبه للادمن بس')
 .addField('!!bc | لعمل برودكاست لجميع الاعضاء في السيرفر للادمن بس')
 .addField('!!giveaway | لعمل جيف اواي لاعضاء السيرفر')
-.addField('اي شي جديد هيضاف هنا وفي نيوز:heart: ')
+.addField('!!clear | لحذف الشات ')
 .setColor("RANDOM")
   message.channel.sendEmbed(embed);
     }
