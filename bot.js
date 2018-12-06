@@ -424,7 +424,7 @@ client.on('message', function(msg) {
   }
 });
 client.on('message', message => {
-    var prefix = "$";
+    var prefix = "!!";
   if (message.author.x5bz) return;
   if (!message.content.startsWith(prefix)) return;
  
