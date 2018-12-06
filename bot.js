@@ -424,7 +424,7 @@ client.on('message', function(msg) {
   }
 });
 client.on('message', message => {
-    var prefix = "!!";
+    var prefix = "$";
   if (message.author.x5bz) return;
   if (!message.content.startsWith(prefix)) return;
  
@@ -440,13 +440,8 @@ client.on('message', message => {
   if(!message.guild.member(client.user).hasPermission("BAN_MEMBERS")) return message.reply("**I Don't Have ` BAN_MEMBERS ` Permission**");
   let user = message.mentions.users.first();
   let reason = message.content.split(" ").slice(2).join(" ");
-  /*let b5bzlog = client.channels.find("name", "5bz-log");
- 
-  if(!b5bzlog) return message.reply("I've detected that this server doesn't have a 5bz-log text channel.");*/
-  if (message.mentions.users.size < 1) return message.channel.send(`https://cdn.pg.sa/fjxlms81nk.png`);
-  if(!reason) return message.channel.send(`https://cdn.pg.sa/fjxlms81nk.png`);
-  if (!message.guild.member(user)
-  .bannable) return message.reply(`This User Is Have High Role !`);
+  .addField('**!!ban @[PRIME] Cam 5w نشر **')
+   .bannable) return message.reply(`This User Is Have High Role !`);
  
   message.guild.member(user).ban(7, user);
  
