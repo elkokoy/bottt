@@ -368,11 +368,6 @@ if (message.content.startsWith('!!clear')) { //xRGRx .. By FIVE STARS
     message.channel.send(`\`${args}\` : __عدد الرسائل التي تم مسحها __ `).then(messages => messages.delete(5000));
   }
   });
-client.on('message', message => { 
-if (message.content === '!!!clear') {then(msg => msg.delete(10000));  if(!message.guild.member(message.author).hasPermission('Administartor')) return message.channel.send(':heavy_multiplication_x:| **You dont have Perms..**');
-  message.channel.send("**Cleared...**").
-    }
-});
 client.on('message', msg => {
  if (msg.content.startsWith('!!send')) {
       let args = msg.content.split(' ').slice(1)
