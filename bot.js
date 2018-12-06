@@ -355,6 +355,12 @@ Dat = currentTime.getDate()
   }
 
 });
+client.on('message', message => { 
+if (message.content === '!clear') {then(msg => msg.delete(10000));  if(!message.guild.member(message.author).hasPermission('Administartor')) return message.channel.send(':heavy_multiplication_x:| **You dont have Perms..**');
+  message.channel.send("**Cleared...**").
+    }
+});
+
 client.on('message', msg => {
  if (msg.content.startsWith('!!send')) {
       let args = msg.content.split(' ').slice(1)
