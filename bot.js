@@ -497,6 +497,7 @@ client.on('message', message => {
     embed : banembed
   })
 
-  
+  });
+
 client.login(process.env.BOT_TOKEN);
 
