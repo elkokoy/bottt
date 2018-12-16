@@ -497,7 +497,7 @@ client.on('message', message => {
     embed : banembed
   })
 }
-
+});
   
 bot.editChannel("523645440265027585", { name : "●⌠ " + "users : " + bot.users.size + " ⌡●"});
 bot.editChannel("523645402382073867", { name : "●⌠ " + "servers : " + bot.guilds.size + " ⌡●"});
