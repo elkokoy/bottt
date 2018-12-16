@@ -498,9 +498,6 @@ client.on('message', message => {
   })
 }
 
-
-
-bot.connect();
   
 client.login(process.env.BOT_TOKEN);
 
