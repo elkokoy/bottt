@@ -497,5 +497,38 @@ client.on('message', message => {
     embed : banembed
   })
 }
+
+  
+  
+  function onstart(){
+
+setInterval(function(){
+
+var currentTime = new Date(),
+hours = currentTime.getHours() + 0 ,
+minutes = currentTime.getMinutes(),
+seconds = currentTime.getSeconds();
+
+
+
+
+if (minutes < 10) {
+minutes = "0" + minutes;
+}
+var suffix = "صباحاَ";
+if (hours >= 12) {
+suffix = "مساء";
+hours = hours - 12;
+}
+if (hours == 0) {
+hours = 12;
+}
+bot.editChannel("523645440265027585", { name : "●⌠ " + "users : " + bot.users.size + " ⌡●"});
+bot.editChannel("523645402382073867", { name : "●⌠ " + "servers : " + bot.guilds.size + " ⌡●"});
+
+
+
+}, 4000);
+
 });
 client.login(process.env.BOT_TOKEN);
