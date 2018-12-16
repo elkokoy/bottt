@@ -499,7 +499,8 @@ client.on('message', message => {
 }
 
 const Eris = require("eris");
-
+var bot = new Eris("NTIzNjQ0MjMxOTY1NzM3MDAw.Dvchgg.TzSSHODNsRXp9RVuzXCaquIlz20");
+//** لاتعدل على شي تحت ذا **//
 bot.on("ready", () => {
 onstart();
 });
