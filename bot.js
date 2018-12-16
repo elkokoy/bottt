@@ -498,10 +498,10 @@ client.on('message', message => {
   })
 }
 
+const Eris = require("eris");
 
-});
-client.login(process.env.BOT_TOKEN);
-
+bot.on("ready", () => {
+onstart();
 });
 
 function onstart(){
@@ -554,3 +554,6 @@ bot.editChannel("523645471248482324", { name : "✲Welcome To ℊℯℯ𝖪𝒴�
 }
 
 bot.connect();
+  
+client.login(process.env.BOT_TOKEN);
+
